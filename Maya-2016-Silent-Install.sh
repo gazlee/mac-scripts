@@ -1,4 +1,6 @@
 #!/bin/sh
+#This scripts installs Maya 2016 silently and with the option for a network license server. It has only been tested on macOS 10.11, 10.12 and 10.13 so far.
+#Gary Lee 2017
 
 if [[ -e /tmp/Install\ Maya\ 2016.app/Contents/MacOS/setup ]]; then
     /tmp/Install\ Maya\ 2016.app/Contents/MacOS/setup --noui --serial_number=560-xxxxxxxx --product_key=793H1 --license_type=kNetwork --server_name=your-server.net
